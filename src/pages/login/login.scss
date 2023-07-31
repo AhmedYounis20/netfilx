@@ -1,0 +1,77 @@
+.login {
+    width: 100hw;
+    height: 100vh;
+    background: linear-gradient(to bottom,
+            rgba(0, 0, 0, 0) 0%,
+            rgba(0, 0, 0, 1) 100%),
+        url("https://assets.nflxext.com/ffe/siteui/vlv3/5eab1b22-c5ea-48b0-8ef4-862b3fa6df2c/6bc6349c-9f77-485b-ab63-d60b411ed02f/EG-en-20230724-popsignuptwoweeks-perspective_alpha_website_medium.jpg");
+    background-size: cover;
+    position: relative;
+
+    .top {
+        .wrapper {
+            padding: 20px 50px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .logo {
+                height: 40px;
+            }
+
+
+        }
+    }
+
+    .container {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        display: flex;
+        top: 0;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: #FFF;
+
+        form{
+            width:300px;
+            height:300px;
+            padding:30px;
+            border-radius:5px;
+            background-color: var(--main-color);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+
+            input{
+                height:40px;
+                border-radius: 5px;
+                background-color: gray;
+                color: #FFF;
+                padding-left: 10px;
+                &::placeholder{
+                    color: lightgray;
+                }
+            }
+            button{
+                height:40px;
+                border-radius: 5px;
+                background-color: red;
+                color: white;
+                border:none;
+                font-style: 18px;
+                font-weight: 800;
+            }
+            span{
+                color:lightgray;
+
+                b{
+                    color:#fff;
+                }
+            }
+        }
+
+       
+    }
+}
